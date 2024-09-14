@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantation Billing System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    
+    <style>
+        body{
+            background-color: #CAD2C5;
+        }
+        nav{
+            background-color: #2F3E46;
+        }
+        .lato-bold {
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html" style="color: white;"><img src="img/Asset 6.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: contents !important;">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mr-auto lato-bold" style="padding-right: 20px;">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="color: white;">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="color: white;">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav> <br>
+            <section id="settings">
+                <h2 style="color: white;">Settings</h2>
+                <form id="settingsForm" style="color: #CAD2C5;">
+                    <div class="mb-3">
+                        <label for="payRate" class="form-label">ငွေပေးနှုန်း</label>
+                        <input type="number" class="form-control" id="payRate" name="payRate" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="bonusThreshold">ရက်မှန်ကြေး</label>
+                        <input type="number" class="form-control" id="bonusThreshold" name="bonusThreshold" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="bonusForOvertime">ရက်ပိုကြေး</label>
+                        <input type="number" class="form-control" id="bonusForOvertime" name="bonusForOvertime" step="0.01" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="factoryDailyRate">စက်ရုံဝင်</label>
+                        <input type="number" class="form-control" id="factoryDailyRate" name="factoryDailyRate" step="0.01" required>
+                    </div>
+                    <button type="submit" class="btn" style="background-color: #84A98C; font-weight: bold;">Save Settings</button>
+                </form>
+            </section>
+            <section id="registration">
+                <h2 style="color: white;">Worker Registration</h2>
+                <form id="registrationForm" style="color: #CAD2C5;">
+                    <div class="mb-3">
+                        <label for="workerName">နာမည်:</label>
+                        <input type="text" class="form-control" id="workerName" name="workerName" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="workerId">ID:</label>
+                        <input type="text" class="form-control" id="workerId" name="workerId" required>
+                    </div> 
+                    <button type="submit" class="btn" style="background-color: #84A98C; font-weight: bold;">Register</button>
+                    
+                </form>
+            </section>
+            <section id="workLog">
+                <h2 style="color: white;">Work Log Submission</h2>
+                <form id="workLogForm" style="color: #CAD2C5;">
+                    <div class="mb-3">
+                        <label for="workerIdLog">Worker ID:</label>
+                        <input type="text" class="form-control" id="workerIdLog" name="workerIdLog" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="plantsScraped">အပင်အရေအတွက်:</label>
+                        <input type="number" class="form-control" id="plantsScraped" name="plantsScraped" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="daysScraped">ခြစ်ရက်:</label>
+                        <input type="number" class="form-control" id="daysScraped" name="daysScraped" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="daysScraped">ရက်ပို:</label>
+                        <input type="number" class="form-control" id="extraDay" name="extraDay" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="factoryDays">စက်ရုံဝင်:</label>
+                        <input type="number" class="form-control" id="factoryDays" name="factoryDays">
+                    </div>
+                    <div class="mb-3">
+                        <label for="advenceMoney">ယူထားသောကြိုတင်ငွေပမာဏ:</label>
+                        <input type="number" class="form-control" id="advenceMoney" name="advenceMoney" step="0.01">
+                    </div>
+                    <div class="mb-3">
+                        <label for="deduction">နှုတ်လိုသောကြိုတင်ငွေပမာဏ:</label>
+                        <input type="number" class="form-control" id="deduction" name="deduction" step="0.01">
+                    </div>
+                    <button type="submit" class="btn" style="background-color: #84A98C; font-weight: bold;">တင်သွင်း</button>
+                </form>
+            </section>
+            <section id="invoice">
+                <h2 style="color: white;">Generate Invoice</h2>
+                <form id="invoiceForm">
+                    <div class="mb-3" style="color: #CAD2C5;">
+                        <label for="workerIdInvoice">Worker ID:</label>
+                        <input type="text" class="form-control" id="workerIdInvoice" name="workerIdInvoice" required>
+                    </div>
+                    <button type="submit" class="btn" style="background-color: #84A98C; font-weight: bold;">Generate</button>
+                </form>
+                <h2 style="color: darkblue; text-align: center;">Invoice</h2>
+                <div id="invoiceResult" style="background-color: #f7f7f7; padding: 20px; max-width: 600px; margin: auto; border: 1px solid #ddd; border-radius: 8px;">
+                    <!-- Invoice will be dynamically generated here -->
+                </div>
+                <button onclick="printInvoice()" style="display: block; margin: 20px auto; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">Print Invoice</button>
+            </section>
+        </div>
+    </main>
+
+    <footer style="height: 100px; width: auto; background-color: #354f52;">
+        <div class="container">
+            <div class="row" style="text-align: center; padding-top: 30px; color: white;">
+                <div class="col-lg-4 col-12 mt-2 mt-lg-0">
+                    <ul class="social-icon">
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link">
+                                <img class="icon-svg" src="icon/social-color-1_logo-facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link">
+                                <img class="icon-svg" src="icon/social-color-1_logo-twitter.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link">
+                                <img class="icon-svg" src="icon/social-color-1_logo-whatsapp.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">©Copyright 2024 by Kyi Lin Tun All Right Reserved </div>
+                <div class="col-lg-4">Designed by: HellHound</div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/f8b8e5344c.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

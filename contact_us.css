@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.hero {
+    background: url('img/rubber-plantation-2.jpg') no-repeat center;
+    opacity: 0.75;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.round {
+    background: white;
+    border-radius: 100px;
+    display: inline-block;
+    padding: 7px 16px 3px 16px;
+}
+.social-icon {
+    margin: 0;
+    padding: 0;
+}
+.social-icon-item {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.social-icon-link {
+    background: var(--social-icon-link-bg-color);
+    border-radius: var(--border-radius-large);
+    color: var(--white-color);
+    font-size: var(--btn-font-size);
+    display: block;
+    margin-right: 50px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    line-height: 40px;
+    transition: all 0.5s;
+}
+
+.icon-svg{
+    width: 30px;
+}
