@@ -144,19 +144,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     </tr>
                     <tr>
                         <td style="padding: 8px; border: 1px solid #ddd;">နှုုတ်ယူလိုသောကြိုတင်ငွေ:</td>
-                        <td style="padding: 8px; border: 1px solid #ddd;">${totalDeduction.toFixed(2)} USD</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">${totalDeduction.toFixed(2)} ကျပ်</td>
                     </tr>
                     <tr>
                         <td style="padding: 8px; border: 1px solid #ddd;">လက်ကျန်ကြိုတင်ငွေ:</td>
-                        <td style="padding: 8px; border: 1px solid #ddd;">${AdvenceMoney.toFixed(2)} USD</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">${AdvenceMoney.toFixed(2)} ကျပ်</td>
                     </tr>
                     <tr>
                         <td style="padding: 8px; border: 1px solid #ddd;">ဘောနပ်:</td>
-                        <td style="padding: 8px; border: 1px solid #ddd;">${bonus.toFixed(2)} USD</td>
+                        <td style="padding: 8px; border: 1px solid #ddd;">${bonus.toFixed(2)} ကျပ်</td>
                     </tr>
                     <tr>
                         <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">လစာ:</td>
-                        <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">${totalSalary.toFixed(2)} USD</td>
+                        <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">${totalSalary.toFixed(2)} ကျပ်</td>
                     </tr>
                 </tbody>
                 </table>
